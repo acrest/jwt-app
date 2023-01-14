@@ -1,1 +1,16 @@
 <div><h1>JWT APP</h1></div>
+Secret
+<input type="text" [(ngModel)]="secret">
+Payload
+<input  [(ngModel)]="payloadJson">
+<!-- Audience
+<input  [(ngModel)]="audience"> -->
+
+<br><br>
+<button type="button" (click)="getToken()">Generate JWT</button>
+<br><br>
+JWT
+<div>
+  {{jwt}}
+</div>
+
